@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+.workspace {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.module {
+    background-color: rgb(226, 223, 219);
+    border-radius: 5px;
+    padding: 10px;
+    width: 17vw;
+    align-self: flex-start;
+    cursor: move;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.module-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-header button {
+    border: none;
+    background-color: rgb(226, 223, 219);
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+
+.module-header button:hover {
+    border: none;
+    background-color: #fdfdfc;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.module-name {
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 3px 3px;
+}
+
+.footer span {
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.footer:hover {
+    background-color: #aca9a6;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.footer::after {
+    background-color: white;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    /* cursor: pointer; */
+    cursor: move;
+    margin-top: 10px;
+}
+
+.card.dragging {
+    opacity: 0.8;
+}
+
+.card-status-done {
+    width: fit-content;
+    background-color: yellowgreen;
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.card-status-done:hover {
+    background-color: rgb(118, 168, 18);
+}
+
+.card-status-not-started {
+    width: fit-content;
+    background-color: rgb(218, 130, 31);
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.card-status-not-started:hover {
+    background-color: rgb(192, 109, 15);
+}
+
+.card-name {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+.card-description {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    margin-top: 3px;
+}
+
+.footer .add-card .card-title {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.footer .add-card .card-title:focus-visible {
+    outline: 0;
+}
+
+.footer .add-card .add-card-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.footer .add-card.hide {
+    display: none;
+}
+
+.footer .add-card.show {
+    display: block;
+}
+
+.footer .add-card .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer .add-card button {
+    border: none;
+    background-color: rgb(226, 223, 219);
+    cursor: pointer;
+}
+
+.footer .add-card-placeholder.show {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    display: block;
+    width: fit-content;
+}
+
+.footer .add-card-placeholder.hide {
+    display: none;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-header button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.card .card-header button:hover {
+    border: none;
+    background-color: #aca9a6;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.card .card-header .card-actions {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
